@@ -1,0 +1,106 @@
+html {
+  position: relative;
+}
+body {
+  margin-bottom: 25%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+.navbar-brand span {
+  color: rgb(188, 149, 24);
+}
+.section {
+  background-image: url("../img/header.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  height: 640px;
+  overflow: hidden;
+}
+.about,
+.portofolio,
+.contact {
+  min-height: 100vh;
+}
+
+.section img {
+  margin-top: 200px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #cecdcd;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.section h1 {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 10rem;
+}
+.section p {
+  padding-bottom: 35px;
+}
+
+.section h1,
+.section p {
+  font-size: 1.7rem;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+.pKiri,
+.pKanan {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+.pKanan {
+  transform: translate(50px 0);
+}
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+  opacity: 1;
+  transform: translate(0 0);
+}
+.about h2,
+.portofolio h2,
+.contact h2 {
+  margin-top: 5rem;
+}
+
+.portofolio {
+  background-color: silver;
+}
+.portofolio .img-thumbnail {
+  opacity: 0;
+  transform: translate(0, -10px);
+  transition: 0.5s;
+}
+
+.portofolio .img-thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0 0);
+}
+.portofolio img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: rgb(105, 104, 104);
+}
+footer p {
+  color: #fff;
+  font-size: 1rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
